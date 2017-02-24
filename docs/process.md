@@ -237,9 +237,10 @@ This instruction set will use the issue `Remove unnecessary System.out.printlns 
     * Merge with ["Squash and merge"](https://github.com/blog/2141-squash-your-commits) option (preferable). Format of the commit message:
 
       ```
-      [#Issue number] Issue title as given in the original issue (#PR number)
+      [#Issue number Issue c.* label] Issue title as given in the original issue (#PR number)
       ```
-      e.g. `[#3942] Remove unnecessary System.out.printlns from Java files (#3944)`.
+      e.g. `[#3942 Task] Remove unnecessary System.out.printlns from Java files (#3944)`.<br>
+      *If the corresponding issue does not have a `c.*` label, the person doing the merging can decide an appropriate category for it.*
     * Apply an `e.*` label to the issue (not the PR) to indicate the estimated effort required to fix the issue,
       and another `e.*` label to the PR to indicate the estimated effort required to review the PR.<br>
       `e.1` is roughly equal to an hour of work, `e.2` is two hours of work, and so on.
